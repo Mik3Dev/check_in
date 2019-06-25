@@ -15,7 +15,7 @@ class CreateGeneralServicesTable extends Migration
     {
         Schema::create('general_services', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigIncrements('document_id');
+            $table->bigInteger('document_id');
             $table->timestamps();
         });
     }
